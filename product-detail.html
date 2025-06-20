@@ -516,6 +516,12 @@
             color: var(--text-light); /* Ensure consistent white text */
         }
 
+        /* Related Products Image Height Fix */
+        .related-products .card-img-top {
+            height: 200px; /* Or your preferred fixed height */
+            object-fit: cover;
+        }
+
 
         /* Cart Sidebar (Consistent with index.html) */
         .cart-sidebar {
@@ -847,8 +853,7 @@
                             <span class="cart-count" id="cart-count">0</span>
                         </button>
                     </li>
-                    <!-- Theme toggle button removed -->
-                </ul>
+                    </ul>
             </div>
         </div>
     </nav>
@@ -870,14 +875,12 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="product-image-gallery">
-                        <!-- Main image container for double image animation -->
                         <div class="main-image-container">
                             <img src="/placeholder.svg" alt="Product Image Front" class="img-front" id="main-image-front">
                             <img src="/placeholder.svg" alt="Product Image Back" class="img-back" id="main-image-back">
                         </div>
                         <div class="thumbnail-gallery" id="thumbnail-gallery">
-                            <!-- Thumbnails will be populated by JavaScript -->
-                        </div>
+                            </div>
                     </div>
                 </div>
 
@@ -887,21 +890,16 @@
                         
                         <div class="product-rating">
                             <div class="stars" id="product-stars">
-                                <!-- Stars populated by JS -->
-                            </div>
+                                </div>
                             <span class="rating-text" id="rating-text"></span>
                         </div>
 
                         <div class="product-price" id="product-price"></div>
 
-                        <!-- Product description removed as per request -->
-                        <!-- <p class="product-description" id="product-description"></p> -->
-
                         <div class="product-variants">
                             <h3 class="variant-title">Select Weight:</h3>
                             <div class="variant-options" id="variant-options">
-                                <!-- Variants populated by JS -->
-                            </div>
+                                </div>
                         </div>
 
                         <div class="quantity-section">
@@ -924,15 +922,13 @@
 
                         <div class="product-features">
                             <h3 class="features-title">Product Features</h3>
-                            <!-- These features are dynamically loaded via JS in loadProduct() -->
-                        </div>
+                            </div>
                     </div>
                 </div>
             </div>
 
             <div class="product-tabs">
                 <ul class="nav nav-tabs" id="productTabs" role="tablist">
-                    <!-- Removed Description Tab -->
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="nutrition-tab" data-bs-toggle="tab" data-bs-target="#nutrition" type="button" role="tab">
                             Nutrition Facts
@@ -945,7 +941,6 @@
                     </li>
                 </ul>
                 <div class="tab-content" id="productTabContent">
-                    <!-- Nutrition Facts Tab (active by default now) -->
                     <div class="tab-pane fade show active" id="nutrition" role="tabpanel">
                         <h4>Nutrition Facts</h4>
                         <p><strong>Health Benefits:</strong></p>
@@ -1244,7 +1239,7 @@
                 ],
                 images: {
                     front: 'images/Rice/Black Rice/1.jpg',
-                    back: 'images/Rice/Black Rice/2.webp'
+                    back: 'images/Rice/Black Rice/2.jpg'
                 },
                 features: [
                     'Highest Antioxidant Content',
@@ -1267,7 +1262,7 @@
                 ],
                 images: {
                     front: 'images/Spice/Turmeric/1.jpg',
-                    back: 'images/Spice/Turmeric/2.webp'
+                    back: 'images/Spice/Turmeric/2.jpg'
                 },
                 features: [
                     '100% Organic & Natural',
@@ -1289,7 +1284,7 @@
                     { weight: '1kg', price: 980 }
                 ],
                 images: {
-                    front: 'images/Spice/Lal Mirch/1.webp',
+                    front: 'images/Spice/Lal Mirch/1.jpg',
                     back: 'images/Spice/Lal Mirch/2.jpg'
                 },
                 features: [
@@ -1313,8 +1308,8 @@
                     { weight: '1kg', price: 2200 }
                 ],
                 images: {
-                    front: 'images/Spice/Garam Masala/1.webp',
-                    back: 'images/Spice/Garam Masala/2.webp'
+                    front: 'images/Spice/Garam Masala/1.jpg',
+                    back: 'images/Spice/Garam Masala/2.jpg'
                 },
                 features: [
                     'Authentic Blend',
@@ -1336,7 +1331,7 @@
                 ],
                 images: {
                     front: 'images/Spice/Ketchup/1.jpg',
-                    back: 'images/Spice/Ketchup/2.webp'
+                    back: 'images/Spice/Ketchup/2.jpg'
                 },
                 features: [
                     '100% Organic Tomatoes',
@@ -1379,7 +1374,7 @@
                     { weight: '1L', price: 900 }
                 ],
                 images: {
-                    front: 'images/Spice/Soy Sauce/1.webp',
+                    front: 'images/Spice/Soy Sauce/1.jpg',
                     back: 'images/Spice/Soy Sauce/2.jpg'
                 },
                 features: [
@@ -1403,7 +1398,7 @@
                 ],
                 images: {
                     front: 'images/Lentils/Toor/1.jpg',
-                    back: 'images/Lentils/Toor/2.png'
+                    back: 'images/Lentils/Toor/2.jpg'
                 },
                 features: [
                     '100% Organic & Natural',
@@ -1449,7 +1444,7 @@
                 ],
                 images: {
                     front: 'images/Lentils/Chana/1.jpg',
-                    back: 'images/Lentils/Chana/2.png'
+                    back: 'images/Lentils/Chana/2.jpg'
                 },
                 features: [
                     'High Protein Content',
@@ -1565,8 +1560,8 @@
                     { weight: '10kg', price: 850 }
                 ],
                 images: {
-                    front: 'images/Wheat/Organic Wheat Flour/1.webp',
-                    back: 'images/Wheat/Organic Wheat Flour/2.webp'
+                    front: 'images/Wheat/Organic Wheat Flour/1.jpg',
+                    back: 'images/Wheat/Organic Wheat Flour/2.jpg'
                 },
                 features: [
                     '100% Organic & Natural',
@@ -1588,8 +1583,8 @@
                     { weight: '10kg', price: 650 }
                 ],
                 images: {
-                    front: 'images/Wheat/All Purpose Flour/1.webp',
-                    back: 'images/Wheat/All Purpose Flour/2.webp'
+                    front: 'images/Wheat/All Purpose Flour/1.jpg',
+                    back: 'images/Wheat/All Purpose Flour/2.jpg'
                 },
                 features: [
                     'Premium Quality',
@@ -1612,7 +1607,7 @@
                 ],
                 images: {
                     front: 'images/Wheat/Suji/1.jpg',
-                    back: 'images/Wheat/Suji/2.png'
+                    back: 'images/Wheat/Suji/2.jpg'
                 },
                 features: [
                     'Fine Quality',
@@ -1634,7 +1629,7 @@
                     { weight: '5kg', price: 5200 }
                 ],
                 images: {
-                    front: 'images/Cereals/quinoa/1.png',
+                    front: 'images/Cereals/quinoa/1.jpg',
                     back: 'images/Cereals/quinoa/2.jpg'
                 },
                 features: [
@@ -1658,7 +1653,7 @@
                 ],
                 images: {
                     front: 'images/Cereals/Oats/1.jpg',
-                    back: 'images/Cereals/Oats/2.png'
+                    back: 'images/Cereals/Oats/2.jpg'
                 },
                 features: [
                     'Rich in Fiber',
@@ -1680,8 +1675,8 @@
                     { weight: '5kg', price: 1550 }
                 ],
                 images: {
-                    front: 'images/Cereals/barley/1.webp',
-                    back: 'images/Cereals/barley/2.webp'
+                    front: 'images/Cereals/barley/1.jpg',
+                    back: 'images/Cereals/barley/2.jpg'
                 },
                 features: [
                     'Rich in Fiber',
@@ -1703,8 +1698,8 @@
                     { weight: '5kg', price: 1700 }
                 ],
                 images: {
-                    front: 'images/Cereals/millet/1.png',
-                    back: 'images/Cereals/millet/2.png'
+                    front: 'images/Cereals/millet/1.jpg',
+                    back: 'images/Cereals/millet/2.jpg'
                 },
                 features: [
                     'Gluten-Free',
@@ -1726,8 +1721,8 @@
                     { weight: '2kg', price: 5800 }
                 ],
                 images: {
-                    front: 'images/Nuts/Almonds/1.webp',
-                    back: 'images/Nuts/Almonds/2.webp'
+                    front: 'images/Nuts/Almonds/1.jpg',
+                    back: 'images/Nuts/Almonds/2.jpg'
                 },
                 features: [
                     'Rich in Vitamin E',
@@ -1750,7 +1745,7 @@
                 ],
                 images: {
                     front: 'images/Nuts/Walnut/1.jpg',
-                    back: 'images/Nuts/Walnut/2.webp'
+                    back: 'images/Nuts/Walnut/2.jpg'
                 },
                 features: [
                     'Kashmir Premium Quality',
@@ -1774,7 +1769,7 @@
                 ],
                 images: {
                     front: 'images/Nuts/Cashew/1.jpg',
-                    back: 'images/Nuts/Cashew/2.webp'
+                    back: 'images/Nuts/Cashew/2.jpg'
                 },
                 features: [
                     'Premium Quality',
@@ -1796,7 +1791,7 @@
                 ],
                 images: {
                     front: 'images/Pulps/Mango/1.jpg',
-                    back: 'images/Pulps/Mango/2.webp'
+                    back: 'images/Pulps/Mango/2.jpg'
                 },
                 features: [
                     'Made from Alphonso Mangoes',
@@ -1818,7 +1813,7 @@
                 ],
                 images: {
                     front: 'images/Pulps/Guava/1.jpg',
-                    back: 'images/Pulps/Guava/2.webp'
+                    back: 'images/Pulps/Guava/2.jpg'
                 },
                 features: [
                     'High in Vitamin C',
@@ -1839,7 +1834,7 @@
                     { weight: '2kg', price: 1150 }
                 ],
                 images: {
-                    front: 'images/Pulps/Apple/1.webp',
+                    front: 'images/Pulps/Apple/1.jpg',
                     back: 'images/Pulps/Apple/2.jpg'
                 },
                 features: [
@@ -1953,7 +1948,7 @@
                 ],
                 images: {
                     front: 'images/Sweetners/Jaggery/1.jpg',
-                    back: 'images/Sweetners/Jaggery/2.webp'
+                    back: 'images/Sweetners/Jaggery/2.jpg'
                 },
                 features: [
                     'Unrefined Sugar',
@@ -2129,6 +2124,7 @@
         function getStarsHTML(rating) {
             let starsHTML = '';
             for (let i = 1; i <= 5; i++) {
+                const star = document.createElement('i');
                 if (i <= Math.floor(rating)) {
                     starsHTML += '<i class="fas fa-star"></i>';
                 } else if (i - 0.5 <= rating) {
